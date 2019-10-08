@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>myvuedemo</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+      let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth; //获取屏幕大小
+      let htmlDom = document.getElementsByTagName("html")[0]; //获取HTML的DOM元素，是个数组
+      if(htmlWidth>750){htmlWidth = 750};
+      htmlDom.style.fontSize = htmlWidth/20 + "px" //给DOM元素设置字体大小
+      // console.log(htmlWidth);
+    </script>
+  </body>
+</html>
